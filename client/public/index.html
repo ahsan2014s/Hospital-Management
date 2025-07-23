@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Personal Health Dashboard" />
+    <title>Health Dashboard</title>
+    
+    <!-- Tailwind CSS CDN Fallback - will load if local Tailwind fails -->
+    <script>
+      // Check if Tailwind classes are working, if not load CDN
+      window.addEventListener('DOMContentLoaded', function() {
+        const testDiv = document.createElement('div');
+        testDiv.className = 'bg-blue-500';
+        document.body.appendChild(testDiv);
+        const styles = window.getComputedStyle(testDiv);
+        
+        if (styles.backgroundColor !== 'rgb(59, 130, 246)') {
+          const link = document.createElement('link');
+          link.href = 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+          link.rel = 'stylesheet';
+          document.head.appendChild(link);
+        }
+        
+        document.body.removeChild(testDiv);
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>Enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
