@@ -84,7 +84,7 @@ const DoctorsHealthDashboard = () => {
         <Header activeTab={activeTab} doctorInfo={doctorInfo} />
         
         <main className={`flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6 ${
-          isMobile ? 'pb-20' : '' // Add bottom padding on mobile to account for bottom navigation
+          isMobile ? 'pb-20' : '' 
         }`}>
           {renderContent()}
         </main>
