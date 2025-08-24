@@ -1,0 +1,16 @@
+nohup: ignoring input
+
+> hospital-management-system@1.0.0 dev:client
+> npm run dev --workspace=client
+
+
+> hospital-management-client@1.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v6.3.5  ready in 184 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+Terminated
