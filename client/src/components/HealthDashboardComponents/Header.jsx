@@ -2,6 +2,7 @@
 import React from 'react';
 import { Bell, Settings, Menu } from 'lucide-react';
 import { sidebarItems } from '../../config/healthMenuItems';
+import LogoutComponent from '../common/LogoutComponent';
 
 const Header = ({ activeTab, isMobile }) => {
   return (
@@ -19,6 +20,7 @@ const Header = ({ activeTab, isMobile }) => {
           <button className="p-2 text-gray-600 hover:text-gray-900 rounded-full hover:bg-gray-100">
             <Settings className="w-5 h-5" />
           </button>
+          <LogoutComponent />
         </div>
       </div>
     </header>
