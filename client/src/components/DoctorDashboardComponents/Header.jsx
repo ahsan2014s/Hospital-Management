@@ -1,6 +1,7 @@
 import React from 'react';
 import { Bell, Settings, User } from 'lucide-react';
 import { sidebarItems } from '../../config/sidebarConfig';
+import LogoutComponent from '../common/LogoutComponent';
 
 
 const Header = ({ activeTab, doctorInfo }) => {
@@ -20,7 +21,7 @@ const Header = ({ activeTab, doctorInfo }) => {
             <Settings className="w-5 h-5" />
           </button>
           
-
+          <LogoutComponent />
         </div>
       </div>
     </header>
