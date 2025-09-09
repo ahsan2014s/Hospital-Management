@@ -74,7 +74,7 @@ This project is built on the **MERN** stack, chosen for its robustness, scalabil
 *   **Environment Management:**
     *   **[dotenv](https://github.com/motdotla/dotenv):** For managing environment variables.
 
-### Frontend (Assumed)
+### Frontend
 
 *   **[React.js](https://reactjs.org/):** A declarative JavaScript library for building user interfaces.
 *   **[React Router](https://reactrouter.com/):** For client-side routing and navigation between dashboard pages.
